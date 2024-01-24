@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Roboto';
+}
+
+g.line-chart > g:last-of-type > g:first-child {
+  & > g:nth-child(1) g.line-series > g > path {
+    stroke-dasharray: 6;
+  }
+
+  & > g:nth-child(2) g.line-series > g > path {
+    stroke-width: 3;
+  }
+}
+
+
+
+g.line-chart {
+  & > g:nth-of-type(2) {
+    // y-axis & reference area
+    & > g:first-child {
+      & path.reference-area {
+        fill: #004bcb;
+      }
+
+      & line.refline-path {
+        stroke: #004bcb;
+        stroke-dasharray: 3;
+      }
+    }
+  }
+}
