@@ -21,7 +21,7 @@ export class AppComponent {
     selectable: false,
     group: ScaleType.Linear,
     name: 'dark',
-    domain: ['#004bcb', '#ff0000'],
+    domain: ['#3BBDFF', '#1246cc'],
   };
 
   constructor() {

@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 200px;
   font-family: 'Roboto';
+  background-color: #262F40;
 
   & > div {
     width: 100%;
@@ -26,12 +27,37 @@
     padding: 5px 8px;
     margin-top: 3px;
     border-radius: 5px;
-    background-color: #004bcb;
+    background-color: #3BBDFF;
   }
 }
 
 ::ng-deep {
   .ngx-charts {
     height: 240px;
+  }
+  
+  .chart-legend {
+    & header {
+      display: none;
+    }
+
+    & .legend-wrap > .legend-labels {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+
+      & li {
+        color: black;
+        margin: 4px 8px;
+      }
+    }
+  }
+
+  .ngx-charts-tooltip-content {
+    background: #262F40 !important; 
+
+    & .tooltip-caret {
+      border-right-color: #262F40 !important;
+    }
   }
 }
