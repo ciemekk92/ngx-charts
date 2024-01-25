@@ -16,7 +16,7 @@ export const optionOneReferenceLines: ReferenceLine[] = [
 
 export const multi = [
   {
-    name: 'Tested Result (All Year Average) | 14.49%',
+    name: 'Tested Results (Annually)',
     series: [
       {
         name: '2017',
@@ -33,7 +33,7 @@ export const multi = [
     ],
   },
   {
-    name: 'Tested Results (Annually)',
+    name: 'Tested Result (All Year Average) | 14.49%',
     series: [
       {
         name: '2017',
