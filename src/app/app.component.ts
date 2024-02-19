@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Color, LegendPosition, ScaleType } from '@swimlane/ngx-charts';
+import * as d3 from 'd3';
 import { ReferenceLine, multi, optionOneReferenceLines } from './data';
 
 @Component({
